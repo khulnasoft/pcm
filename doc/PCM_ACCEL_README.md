@@ -114,7 +114,7 @@ Please refer to the spec or code to learn more about the event mapping if you wa
 
 - IAA/DSA: https://software.intel.com/en-us/download/intel-data-streaming-accelerator-preliminary-architecture-specification
 
-- QAT: please refer to the [mapping table in source code](https://github.com/intel/pcm/blob/f20013f7563714cf592d7a59f169c1ddee3cf8ba/src/cpucounters.cpp#L915)
+- QAT: please refer to the [mapping table in source code](https://github.com/khulnasoft/pcm/blob/f20013f7563714cf592d7a59f169c1ddee3cf8ba/src/cpucounters.cpp#L915)
 
 
 Here is the content of the event cfg file(opCode-6-143-accel.txt as example)

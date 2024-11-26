@@ -2,8 +2,8 @@
 Intel&reg; Performance Counter Monitor (Intel&reg; PCM)
 --------------------------------------------------------------------------------
 
-[![CodeQL](https://github.com/intel/pcm/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/intel/pcm/security/code-scanning/tools/CodeQL/status)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/intel/pcm/badge)](https://securityscorecards.dev/viewer/?uri=github.com/intel/pcm)
+[![CodeQL](https://github.com/khulnasoft/pcm/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/khulnasoft/pcm/security/code-scanning/tools/CodeQL/status)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/khulnasoft/pcm/badge)](https://securityscorecards.dev/viewer/?uri=github.com/intel/pcm)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/8652/badge)](https://www.bestpractices.dev/projects/8652)
 
 [PCM Tools](#pcm-tools) | [Building PCM](#building-pcm-tools) | [Downloading Pre-Compiled PCM](#downloading-pre-compiled-pcm-tools) | [FAQ](#frequently-asked-questions-faq) | [API Documentation](#pcm-api-documentation) | [Environment Variables](#pcm-environment-variables) | [Compilation Options](#custom-compilation-options)
@@ -18,11 +18,11 @@ We welcome bug reports and enhancement requests, which can be submitted via the 
 Current Build Status
 --------------------------------------------------------------------------------
 
-- Linux: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/intel/pcm/linux_make.yml?branch=master)](https://github.com/intel/pcm/actions/workflows/linux_make.yml?query=branch%3Amaster)
+- Linux: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/pcm/linux_make.yml?branch=master)](https://github.com/khulnasoft/pcm/actions/workflows/linux_make.yml?query=branch%3Amaster)
 - Windows: [![Build status](https://ci.appveyor.com/api/projects/status/github/intel/pcm?branch=master&svg=true)](https://ci.appveyor.com/project/opcm/pcm)
-- FreeBSD: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/intel/pcm/freebsd_build.yml?branch=master)](https://github.com/intel/pcm/actions/workflows/freebsd_build.yml?query=branch%3Amaster)
-- OS X: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/intel/pcm/macosx_build.yml?branch=master)](https://github.com/intel/pcm/actions/workflows/macosx_build.yml?query=branch%3Amaster)
-- Docker container: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/intel/pcm/docker.yml?branch=master)](doc/DOCKER_README.md)
+- FreeBSD: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/pcm/freebsd_build.yml?branch=master)](https://github.com/khulnasoft/pcm/actions/workflows/freebsd_build.yml?query=branch%3Amaster)
+- OS X: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/pcm/macosx_build.yml?branch=master)](https://github.com/khulnasoft/pcm/actions/workflows/macosx_build.yml?query=branch%3Amaster)
+- Docker container: [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/pcm/docker.yml?branch=master)](doc/DOCKER_README.md)
 
 --------------------------------------------------------------------------------
 PCM Tools
@@ -32,11 +32,11 @@ PCM provides a number of command-line utilities for real-time monitoring:
 
 - **pcm** : basic processor monitoring utility (instructions per cycle, core frequency (including Intel(r) Turbo Boost Technology), memory and Intel(r) Quick Path Interconnect bandwidth, local and remote memory bandwidth, cache misses, core and CPU package sleep C-state residency, core and CPU package thermal headroom, cache utilization, CPU and memory energy consumption)
 
-![pcm output](https://github.com/intel/pcm/assets/25432609/88485ff5-dc7c-4a1c-974f-8396f03829dc)
+![pcm output](https://github.com/khulnasoft/pcm/assets/25432609/88485ff5-dc7c-4a1c-974f-8396f03829dc)
 
 - **pcm-sensor-server** : pcm collector exposing metrics over http in JSON or Prometheus (exporter text based) format ([how-to](doc/PCM-EXPORTER.md)). Also available as a [docker container](doc/DOCKER_README.md). More info about Global PCM events is [here](doc/PCM-SENSOR-SERVER-README.md).
 - **pcm-memory** : monitor memory bandwidth (per-channel and per-DRAM DIMM rank)
-![pcm-memory output](https://raw.githubusercontent.com/wiki/intel/pcm/pcm-memory.x.JPG)
+![pcm-memory output](https://raw.githubusercontent.com/wiki/khulnasoft/pcm/pcm-memory.x.JPG)
 - **pcm-accel** : [monitor Intel® In-Memory Analytics Accelerator (Intel® IAA), Intel® Data Streaming Accelerator (Intel® DSA) and Intel® QuickAssist Technology (Intel® QAT)  accelerators](doc/PCM_ACCEL_README.md)
 ![image](https://user-images.githubusercontent.com/25432609/218480696-42ade94f-e0c3-4000-9dd8-39a0e75a210e.png)
 
@@ -44,7 +44,7 @@ PCM provides a number of command-line utilities for real-time monitoring:
 - **pcm-pcie** : monitor PCIe bandwidth per-socket
 - **pcm-iio** : monitor PCIe bandwidth per PCIe device
 
-![pcm-iio output](https://raw.githubusercontent.com/wiki/intel/pcm/pcm-iio.png)
+![pcm-iio output](https://raw.githubusercontent.com/wiki/khulnasoft/pcm/pcm-iio.png)
 - **pcm-numa** : monitor local and remote memory accesses
 - **pcm-power** : monitor sleep and energy states of processor, Intel(r) Quick Path Interconnect, DRAM memory, reasons of CPU frequency throttling and other energy-related metrics
 - **pcm-tsx**: monitor performance metrics for Intel(r) Transactional Synchronization Extensions
@@ -54,7 +54,7 @@ PCM provides a number of command-line utilities for real-time monitoring:
 
 Graphical front ends:
 - **pcm Grafana dashboard** :  front-end for Grafana (in [scripts/grafana](scripts/grafana) directory). Full Grafana Readme is [here](scripts/grafana/README.md)
-![pcm grafana output](https://raw.githubusercontent.com/wiki/intel/pcm/pcm-dashboard.png)
+![pcm grafana output](https://raw.githubusercontent.com/wiki/khulnasoft/pcm/pcm-dashboard.png)
 - **pcm-sensor** :  front-end for KDE KSysGuard
 - **pcm-service** :  front-end for Windows perfmon
 

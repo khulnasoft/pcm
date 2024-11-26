@@ -33,4 +33,4 @@ The default output of pcm-sensor-server endpoint in a browser:
 
 The PCM exporter can be used together with Grafana to obtain these Intel processor metrics (see [how-to](../scripts/grafana/README.md)):
 
-![pcm grafana output](https://raw.githubusercontent.com/wiki/intel/pcm/pcm-dashboard-full.png)
+![pcm grafana output](https://raw.githubusercontent.com/wiki/khulnasoft/pcm/pcm-dashboard-full.png)
