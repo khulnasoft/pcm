@@ -9,7 +9,7 @@ jobs:
   build:
 
     runs-on: ci-kw-windows
-    if: ${{ github.repository != 'intel/pcm' }}
+    if: ${{ github.repository != 'khulnasoft/pcm' }}
 
     steps:
     - name: Harden Runner

@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: ci-cppcheck
-    if: ${{ github.repository != 'intel/pcm' }}        
+    if: ${{ github.repository != 'khulnasoft/pcm' }}        
 
     steps:
     - name: Harden Runner

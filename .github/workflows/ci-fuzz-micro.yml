@@ -12,7 +12,7 @@ permissions:
 jobs:
   fuzz:
     runs-on: ci-test
-    if: ${{ github.repository != 'intel/pcm' }}
+    if: ${{ github.repository != 'khulnasoft/pcm' }}
 
     steps:
     - name: Harden Runner

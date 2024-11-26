@@ -12,7 +12,7 @@ permissions:
 jobs:
   job-build1:
     runs-on: ci-gcc9
-    if: ${{ github.repository != 'intel/pcm' }}
+    if: ${{ github.repository != 'khulnasoft/pcm' }}
 
     steps:
     - name: Harden Runner
@@ -40,7 +40,7 @@ jobs:
 
   job-build2:
     runs-on: ci-test
-    if: ${{ github.repository != 'intel/pcm' }}
+    if: ${{ github.repository != 'khulnasoft/pcm' }}
 
     steps:
     - name: Harden Runner

@@ -717,7 +717,7 @@ private:
         printCounter( "Invariant TSC",            getInvariantTSC       ( before, after ) );
         printCounter( "SMI Count",                getSMICount           ( before, after ) );
 #if 0
-        // disabling this metric for a moment due to https://github.com/intel/pcm/issues/789
+        // disabling this metric for a moment due to https://github.com/khulnasoft/pcm/issues/789
         printCounter( "Core Frequency",           getActiveAverageFrequency ( before, after ) );
 #endif
         //DBG( 2, "Invariant TSC before=", before.InvariantTSC, ", after=", after.InvariantTSC, ", difference=", after.InvariantTSC-before.InvariantTSC );
@@ -763,7 +763,7 @@ private:
         printCounter( "PP1 Joules Consumed",           getConsumedJoules      ( 1, before, after ) );
         printCounter( "DRAM Joules Consumed",          getDRAMConsumedJoules  ( before, after ) );
 #if 0
-        // disabling these metrics for a moment due to https://github.com/intel/pcm/issues/789
+        // disabling these metrics for a moment due to https://github.com/khulnasoft/pcm/issues/789
         auto uncoreFrequencies = getUncoreFrequencies( before, after );
         for (size_t i = 0; i < uncoreFrequencies.size(); ++i)
         {

@@ -23,8 +23,8 @@ Should this BIOS option be unavailable or if there is a preference to change the
 
 |Platform	         |Script Type|	URL                                                                |
 |------------------|-----------|---------------------------------------------------------------------|
-|Linux/FreeBSD/UNIX|bash       | https://github.com/intel/pcm/blob/master/scripts/bhs-power-mode.sh  |
-|Windows	         |powershell | https://github.com/intel/pcm/blob/master/scripts/bhs-power-mode.ps1 |
+|Linux/FreeBSD/UNIX|bash       | https://github.com/khulnasoft/pcm/blob/master/scripts/bhs-power-mode.sh  |
+|Windows	         |powershell | https://github.com/khulnasoft/pcm/blob/master/scripts/bhs-power-mode.ps1 |
 
 The scripts require the pcm-tpmi utility. There are several methods to obtain this utility:
 - **Download or install precompiled PCM binaries:** Please refer to the following link: [Downloading Pre-Compiled PCM Tools](https://github.com/intel/pcm?tab=readme-ov-file#downloading-pre-compiled-pcm-tools)
